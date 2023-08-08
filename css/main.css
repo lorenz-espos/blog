@@ -136,3 +136,56 @@ body{
     width: 70%; /* Dimensione dell'icona */
     height: 70%; /* Dimensione dell'icona */
 }
+
+.aspect-ratio {
+    padding-top: 100%; /* Mantieni l'aspetto quadrato */
+    position: relative;
+    overflow: hidden;
+  }
+  .aspect-ratio .card-body {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+  }
+
+.linkdln{
+    background-color: #0955a1;
+
+}
+.instagram{
+    background-color:#E1306C;
+
+}
+.github{
+    background-color:black;
+
+}
+.instagram:hover{
+    background-color: transparent;
+}
+.linkdln:hover{
+    background-color: transparent;
+}
+.github:hover{
+    background-color: transparent;
+}
+
+.card-image {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-size: auto;
+    background-repeat: round;
+    z-index: 0;
+    opacity: 0; /* Opacità iniziale */
+    transition: opacity 0.3s;
+  }
+  .card:hover .card-image {
+    opacity: 1; /* Opacità completa al passaggio del mouse */
+  }
+
+ 

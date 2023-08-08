@@ -96,3 +96,43 @@ body{
     margin-top: calc(-1 * var(--bs-gutter-y));
 }
 
+.carousel-inner {
+    transition: transform 0.3s ease-in-out; /* Tempo di transizione e funzione di animazione */
+}
+
+.carousel-item {
+    opacity: 1; /* Opacità durante la transizione */
+}
+
+.carousel-item.active {
+    opacity: 0.8; /* Opacità per l'elemento attivo */
+}
+
+#imageCarousel {
+    border-top: #fff 4px solid; /* Aggiunge un bordo alla parte superiore del carousel */
+    border-bottom: #fff 4px solid; /* Aggiunge un bordo alla parte inferiore del carousel */
+    margin-bottom: 2%; /* Puoi regolare il valore in base alle tue preferenze */
+    padding: 3%;
+}
+
+/* Personalizza lo stile dei controlli con bottoni del carosello */
+.carousel-control-prev{
+    background-color: transparent; /* Colore di sfondo */
+    color: #fff; /* Colore dell'icona */
+    left: -25%;
+}
+.carousel-control-next {
+    background-color: transparent; /* Colore di sfondo */
+    color: #fff; /* Colore dell'icona */
+    right: -25%;
+
+}
+
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+    background-color: transparent; /* Colore dell'icona */
+    color: #fff; /* Colore dell'icona */
+    font-size: 40px; /* Dimensione dell'icona */
+    width: 70%; /* Dimensione dell'icona */
+    height: 70%; /* Dimensione dell'icona */
+}

@@ -188,4 +188,44 @@ body{
     opacity: 1; /* Opacità completa al passaggio del mouse */
   }
 
- 
+  
+  .card-body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    position: relative;
+  }
+  
+  .container_2 {
+    background:  rgba(60, 59, 59, 0.253);
+    border: 2px solid rgb(111, 110, 110);
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    top: 50%; /* Sposta al centro verticale */
+    left: 50%; /* Sposta al centro orizzontale */
+    transform: translate(-50%, -50%); /* Ri-posiziona al centro */
+    width: 75%;
+    height: 30%;
+    transition: opacity 0.4s ease-in-out; /* Aggiungi una transizione di 0.3 secondi con effetto di dissolvenza */
+    opacity: 1; /* Opacità iniziale */
+  }
+  .linkdln:hover .container_2{
+opacity: 0;  }
+.instagram:hover .container_2{
+    opacity: 0;  }
+.github:hover .container_2{
+    opacity: 0;  }
+  
+  
+  
+  .container_2 h1 {
+    font-size: 50 px;
+    color: #fff;
+    font-family: 'Roboto', sans-serif; /* Cambia il font per gli intestazioni */
+    text-align: justify;
+}

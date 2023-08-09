@@ -1,18 +1,31 @@
-body{
+body {
     background-color: #30859b;
 }
+
 /* Personalizzazione della barra di navigazione */
 .navbar {
-    margin-bottom: 2%; /* Aggiunge spazio sotto la barra di navigazione */
+    width: 100%;
+    /* Imposta la larghezza al 100% */
+    height: 8%;
+    margin-bottom: 2%;
+    /* Aggiunge spazio sotto la barra di navigazione */
     background-color: #0b738dd5;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.108);
+
 }
+
 /* Stili dei link nella barra di navigazione */
 .navbar-dark .navbar-nav .nav-link {
-    color: #fff; /* Colore del testo dei link */
+    color: #fff;
+    /* Colore del testo dei link */
     padding: 0.5em 1.5em;
-    font-family: 'Montserrat', sans-serif; /* Cambia il font per gli intestazioni */
-    border: 2px solid transparent; /* Aggiunge un bordo trasparente ai link */
-    position: relative; /* Imposta la posizione come relativa */
+    font-family: 'Montserrat', sans-serif;
+    font-size: 100%;
+    /* Cambia il font per gli intestazioni */
+    border: 2px solid transparent;
+    /* Aggiunge un bordo trasparente ai link */
+    position: relative;
+    /* Imposta la posizione come relativa */
 }
 
 /* Effetto di hover sui link nella barra di navigazione */
@@ -67,13 +80,16 @@ body{
 
 .container h2 {
     font-size: 30px;
-    font-family: 'Montserrat', sans-serif; /* Cambia il font per gli intestazioni */
+    font-family: 'Montserrat', sans-serif;
+    /* Cambia il font per gli intestazioni */
     margin-top: 0;
     color: #fff;
 }
+
 .container h1 {
     font-size: 46px;
-    font-family: 'Montserrat', sans-serif; /* Cambia il font per gli intestazioni */
+    font-family: 'Montserrat', sans-serif;
+    /* Cambia il font per gli intestazioni */
     margin-top: 0;
     color: #fff;
     text-align: center;
@@ -83,11 +99,12 @@ body{
     margin-left: 2%;
     font-size: 16px;
     color: #fff;
-    font-family: 'Roboto', sans-serif; /* Cambia il font per gli intestazioni */
+    font-family: 'Roboto', sans-serif;
+    /* Cambia il font per gli intestazioni */
     text-align: justify;
 }
 
-.row_custom{
+.row_custom {
     justify-content: space-around;
     --bs-gutter-x: 1.5rem;
     --bs-gutter-y: 0;
@@ -97,78 +114,101 @@ body{
 }
 
 .carousel-inner {
-    transition: transform 0.3s ease-in-out; /* Tempo di transizione e funzione di animazione */
+    transition: transform 0.3s ease-in-out;
+    /* Tempo di transizione e funzione di animazione */
 }
 
 .carousel-item {
-    opacity: 1; /* Opacità durante la transizione */
+    opacity: 1;
+    /* Opacità durante la transizione */
 }
 
 .carousel-item.active {
-    opacity: 0.8; /* Opacità per l'elemento attivo */
+    opacity: 0.8;
+    /* Opacità per l'elemento attivo */
 }
 
 #imageCarousel {
-    border-top: #fff 4px solid; /* Aggiunge un bordo alla parte superiore del carousel */
-    border-bottom: #fff 4px solid; /* Aggiunge un bordo alla parte inferiore del carousel */
-    margin-bottom: 2%; /* Puoi regolare il valore in base alle tue preferenze */
+    border-top: #fff 4px solid;
+    /* Aggiunge un bordo alla parte superiore del carousel */
+    border-bottom: #fff 4px solid;
+    /* Aggiunge un bordo alla parte inferiore del carousel */
+    margin-bottom: 2%;
+    /* Puoi regolare il valore in base alle tue preferenze */
     padding: 3%;
 }
 
 /* Personalizza lo stile dei controlli con bottoni del carosello */
-.carousel-control-prev{
-    background-color: transparent; /* Colore di sfondo */
-    color: #fff; /* Colore dell'icona */
+.carousel-control-prev {
+    background-color: transparent;
+    /* Colore di sfondo */
+    color: #fff;
+    /* Colore dell'icona */
     left: -25%;
 }
+
 .carousel-control-next {
-    background-color: transparent; /* Colore di sfondo */
-    color: #fff; /* Colore dell'icona */
+    background-color: transparent;
+    /* Colore di sfondo */
+    color: #fff;
+    /* Colore dell'icona */
     right: -25%;
 
 }
 
 .carousel-control-prev-icon,
 .carousel-control-next-icon {
-    background-color: transparent; /* Colore dell'icona */
-    color: #fff; /* Colore dell'icona */
-    font-size: 40px; /* Dimensione dell'icona */
-    width: 70%; /* Dimensione dell'icona */
-    height: 70%; /* Dimensione dell'icona */
+    background-color: transparent;
+    /* Colore dell'icona */
+    color: #fff;
+    /* Colore dell'icona */
+    font-size: 40px;
+    /* Dimensione dell'icona */
+    width: 70%;
+    /* Dimensione dell'icona */
+    height: 70%;
+    /* Dimensione dell'icona */
 }
 
 .aspect-ratio {
-    padding-top: 100%; /* Mantieni l'aspetto quadrato */
+    padding-top: 100%;
+    /* Mantieni l'aspetto quadrato */
     position: relative;
     overflow: hidden;
-  }
-  .aspect-ratio .card-body {
+}
+
+.aspect-ratio .card-body {
     position: absolute;
     top: 0;
     bottom: 0;
     left: 0;
     right: 0;
-  }
+}
 
-.linkdln{
-    background-color: #0955a1;
+.linkdln {
+    background-color: rgb(27, 70, 111);
 
 }
-.instagram{
-    background-color:#E1306C;
+
+.instagram {
+    background-color: #E1306C;
 
 }
-.github{
-    background-color:black;
+
+.github {
+    background-color: black;
 
 }
-.instagram:hover{
+
+.instagram:hover {
     background-color: transparent;
 }
-.linkdln:hover{
+
+.linkdln:hover {
     background-color: transparent;
 }
-.github:hover{
+
+.github:hover {
     background-color: transparent;
 }
 
@@ -181,51 +221,85 @@ body{
     background-size: auto;
     background-repeat: round;
     z-index: 0;
-    opacity: 0; /* Opacità iniziale */
+    opacity: 0;
+    /* Opacità iniziale */
     transition: opacity 0.3s;
-  }
-  .card:hover .card-image {
-    opacity: 1; /* Opacità completa al passaggio del mouse */
-  }
+}
 
-  
-  .card-body {
+.card:hover .card-image {
+    opacity: 1;
+    /* Opacità completa al passaggio del mouse */
+}
+
+
+.card-body {
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
     height: 100%;
     position: relative;
-  }
-  
-  .container_2 {
-    background:  rgba(60, 59, 59, 0.253);
+}
+
+.container_2 {
+   background: rgba(60, 59, 59, 0.253);
     border: 2px solid rgb(111, 110, 110);
     border-radius: 10px;
     display: flex;
     align-items: center;
     justify-content: center;
     position: absolute;
-    top: 50%; /* Sposta al centro verticale */
-    left: 50%; /* Sposta al centro orizzontale */
-    transform: translate(-50%, -50%); /* Ri-posiziona al centro */
+    top: 50%;
+    /* Sposta al centro verticale */
+    left: 50%;
+    /* Sposta al centro orizzontale */
+    transform: translate(-50%, -50%);
+    /* Ri-posiziona al centro */
     width: 75%;
     height: 30%;
-    transition: opacity 0.4s ease-in-out; /* Aggiungi una transizione di 0.3 secondi con effetto di dissolvenza */
-    opacity: 1; /* Opacità iniziale */
-  }
-  .linkdln:hover .container_2{
-opacity: 0;  }
-.instagram:hover .container_2{
-    opacity: 0;  }
-.github:hover .container_2{
-    opacity: 0;  }
-  
-  
-  
-  .container_2 h1 {
+    transition: opacity 0.8s ease-in-out;
+    transition: all 0.6s ease-in-out;
+
+    /* Aggiungi una transizione di 0.3 secondi con effetto di dissolvenza */
+    opacity: 1;
+    /* Opacità iniziale */
+}
+
+.linkdln:hover .container_2 {
+    opacity: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.instagram:hover .container_2 {
+    opacity: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.github:hover .container_2 {
+    opacity: 0;
+    width: 100%;
+    height: 100%;
+}
+
+
+
+.container_2 h1 {
     font-size: 50 px;
     color: #fff;
-    font-family: 'Roboto', sans-serif; /* Cambia il font per gli intestazioni */
+    font-family: 'Roboto', sans-serif;
+    /* Cambia il font per gli intestazioni */
     text-align: justify;
+}
+
+.card{
+    border: 1px solid #0b738dd5 ;
+}
+
+.flex-row {
+   border-top: #fff 4px solid;
+   border-bottom: #fff 4px solid;
+   margin: 2%;
+   padding: 4%;
 }

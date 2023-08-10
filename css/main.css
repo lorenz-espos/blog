@@ -6,7 +6,7 @@ body {
 .navbar {
     width: 100%;
     /* Imposta la larghezza al 100% */
-    height: 8%;
+    height: 7.5%;
     margin-bottom: 2%;
     /* Aggiunge spazio sotto la barra di navigazione */
     background-color: #0b738dd5;
@@ -69,13 +69,14 @@ body {
 .container {
     padding: 2%;
     background-color: #0b738dd5;
-    max-width: 1200px;
+    max-width: 80%;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.108);
 }
 
 .container img {
     margin-top: 11%;
     max-width: 100%;
-    height: 500px;
+    height: 80%;
 }
 
 .container h2 {
@@ -302,4 +303,52 @@ body {
    border-bottom: #fff 4px solid;
    margin: 2%;
    padding: 4%;
+}
+
+
+.my-custom-video {
+    width: 100%;
+    height: 100%;
+    border: 2px solid #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin: 2% auto;
+    display: block;
+    overflow: hidden;
+}
+
+.btn-custom{
+    position: relative;
+    display: block;
+    align-items: end;
+    left: 45%;
+    width: 10%;
+    height: 8%;
+    text-size-adjust: 1.2rem;
+    background-color: #30859b;
+    border: #fff 2px solid;
+    transition: all 0.3s ease-in-out;
+    color: #fff;
+
+
+}
+
+.btn-custom:hover{
+    background-color: #fff;
+    border: #30859b 3px solid;
+    color: #30859b;
+    transform: scale(1.2);
+}
+
+.custom-tooltip{
+    color: #fff;
+}
+
+.custom-image{
+    height:100% !important;
+    width: 100% !important;
+    border: 2px solid #0b738dd5 ;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin-top: 0% !important;
 }

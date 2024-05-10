@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pizzeria C.E.N.T.O.</title>
+    <script>
+        window.watsonAssistantChatOptions = {
+          integrationID: "37f40935-23ba-44bb-9426-5dd049f68401", // The ID of this integration.
+          region: "eu-gb", // The region your integration is hosted in.
+          serviceInstanceID: "42459b0b-c568-4c00-850c-52c12f6404e0", // The ID of your service instance.
+          onLoad: async (instance) => { await instance.render(); }
+        };
+        setTimeout(function(){
+          const t=document.createElement('script');
+          t.src="https://web-chat.global.assistant.watson.appdomain.cloud/versions/" + (window.watsonAssistantChatOptions.clientVersion || 'latest') + "/WatsonAssistantChatEntry.js";
+          document.head.appendChild(t);
+        });
+      </script>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+        header {
+            background-color: #e8bc8c;
+            color: #fff;
+            padding: 20px;
+            text-align: center;
+        }
+        nav {
+            background-color: #e8bc8c;
+            padding: 10px 0;
+            text-align: center;
+        }
+        nav a {
+            color: #fff;
+            text-decoration: none;
+            margin: 0 10px;
+        }
+        section {
+            padding: 20px;
+            margin: 20px;
+            background-color: #fff;
+            border-radius: 5px;
+        }
+        footer {
+            background-color: #e8bc8c;
+            color: #fff;
+            padding: 10px 0;
+            text-align: center;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Pizzeria C.E.N.T.O.</h1>
+    </header>
+    <nav>
+        <a href="#menu">Menu</a>
+        <a href="#contatti">Contatti</a>
+    </nav>
+    <section id="menu">
+        <h2>Il nostro Menu</h2>
+        <ul>
+            <li>Pizza Margherita - €5</li>
+            <li>Pizza Napoletana - €6</li>
+            <li>Pizza Quattro Stagioni - €7</li>
+            <li>Pizza Capricciosa - €7</li>
+            <li>Pizza Diavola - €6</li>
+            <li>Pizza Vegetariana - €6</li>
+        </ul>
+    </section>
+    <section id="contatti">
+        <h2>Contatti</h2>
+        <p>Indirizzo: Via Caracciolo, 80  Napoli</p>
+        <p>Telefono: 0818234688</p>
+        <p>Email: info@pizzeriaCENTO.it</p>
+    </section>
+    <footer>
+        <p>&copy; 2024 Pizzeria C.E.N.T.O.</p>
+    </footer>
+</body>
+</html>

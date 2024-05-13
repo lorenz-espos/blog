@@ -45,15 +45,24 @@
             margin: 20px;
             background-color: #f7ae1280 ;
             border-radius: 5px;
+            overflow: auto;
         }
         footer {
             background-color: #e8bc8c;
             color: black;
             padding: 10px 0;
             text-align: center;
-            position: fixed;
+            position: relative;
             bottom: 0;
+            height: auto;
             width: 100%;
+        }
+
+        .container {
+            margin: 0 ;
+            max-width: 100%;
+            height: auto;
+            overflow: visible;
         }
     </style>
 </head>
@@ -65,6 +74,7 @@
         <a href="#menu">Menu</a>
         <a href="#contatti">Contatti</a>
     </nav>
+    <div class="container">
     <section id="menu">
         <h2>La Nostra Idea</h2>
        <p>
@@ -89,5 +99,9 @@
     <footer>
         <p>&copy; 2024 Pizzeria C.E.N.T.O.</p>
     </footer>
+
+</div>
+
+
 </body>
 </html>

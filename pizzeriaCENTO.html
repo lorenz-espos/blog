@@ -47,12 +47,26 @@
             border-radius: 5px;
             overflow: auto;
         }
-        footer {
+
+        @media (min-width: 600px) {
+            footer {
             background-color: #e8bc8c;
             color: black;
             padding: 10px 0;
             text-align: center;
             position: relative;
+            bottom: 0;
+            height: auto;
+            width: 100%;
+        }
+            
+        }
+        footer {
+            background-color: #e8bc8c;
+            color: black;
+            padding: 10px 0;
+            text-align: center;
+            position: fixed;
             bottom: 0;
             height: auto;
             width: 100%;
